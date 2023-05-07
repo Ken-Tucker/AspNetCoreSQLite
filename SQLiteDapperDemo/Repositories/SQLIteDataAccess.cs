@@ -1,7 +1,5 @@
 ﻿using System;
 using System.IO;
-using Microsoft.AspNetCore.Rewrite.Internal.PatternSegments;
-using Microsoft.IdentityModel.Protocols.OpenIdConnect;
 using Microsoft.Data.Sqlite;
 using Dapper;
 using System.Diagnostics;
