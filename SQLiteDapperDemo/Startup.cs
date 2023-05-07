@@ -23,7 +23,8 @@ namespace SQLiteDapperDemo
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-			services.AddTransient<IDataAccess, SQLIteDataAccess>();
+            services.AddControllers(options => options.EnableEndpointRouting = false);
+            services.AddTransient<IDataAccess, SQLIteDataAccess>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
